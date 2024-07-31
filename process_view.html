@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Process View</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Software Project</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="use_cases.html">Use Cases</a></li>
+                <li class="nav-item"><a class="nav-link" href="architecture.html">Architectural Overview</a></li>
+                <li class="nav-item"><a class="nav-link" href="process_view.html">Process View</a></li>
+                <li class="nav-item"><a class="nav-link" href="quality.html">Quality</a></li>
+                <li class="nav-item"><a class="nav-link" href="design_elements.html">Process to Design Elements</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main class="container mt-4">
+        <h1 class="display-4 text-center">Process View</h1>
+        <p class="lead text-center">Description of the system's dynamic behavior, illustrating how the system's processes interact over time.</p>
+        
+        <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">System Processes</h5>
+                <p class="card-text">The system's main processes include:</p>
+                <ul>
+                    <li><strong>User Authentication</strong>: Handling user login and access control.</li>
+                    <li><strong>Data Processing</strong>: Managing and processing user data.</li>
+                    <li><strong>Notification Service</strong>: Sending notifications and alerts to users.</li>
+                    <li><strong>Reporting</strong>: Generating reports and analytics.</li>
+                    <li><strong>Data Backup</strong>: Regularly backing up user data to ensure data integrity and availability.</li>
+                    <li><strong>Error Handling</strong>: Detecting and managing errors to ensure system stability.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">User Authentication Process</h5>
+                <p class="card-text">The following steps describe the user authentication process:</p>
+                <ul>
+                    <li>User navigates to the login page.</li>
+                    <li>User enters their username and password.</li>
+                    <li>System verifies the credentials.</li>
+                    <li>If credentials are valid, user is redirected to the dashboard. Otherwise, an error message is displayed.</li>
+                </ul>
+                <div class="text-center">
+                    <img src="auth_process_diagram.png" alt="User Authentication Process Diagram" class="img-fluid">
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">Data Processing Workflow</h5>
+                <p class="card-text">The data processing workflow involves the following steps:</p>
+                <ul>
+                    <li>Data collection from user inputs or external sources.</li>
+                    <li>Data validation to ensure accuracy and completeness.</li>
+                    <li>Data storage in the database.</li>
+                    <li>Data retrieval and processing for generating reports or user display.</li>
+                </ul>
+                <div class="text-center">
+                    <img src="data_process_diagram.png" alt="Data Processing Workflow Diagram" class="img-fluid">
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">Notification Service</h5>
+                <p class="card-text">The notification service process includes:</p>
+                <ul>
+                    <li>System monitors user activities and predefined conditions.</li>
+                    <li>When a condition is met, a notification is generated.</li>
+                    <li>Notification is sent to the user via email, SMS, or in-app alert.</li>
+                </ul>
+                <div class="text-center">
+                    <img src="notification_process_diagram.png" alt="Notification Service Process Diagram" class="img-fluid">
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">Error Handling Workflow</h5>
+                <p class="card-text">The error handling workflow includes the following steps:</p>
+                <ul>
+                    <li>System detects an error or exception.</li>
+                    <li>Error is logged for further analysis.</li>
+                    <li>User is notified of the error if necessary.</li>
+                    <li>System attempts to recover from the error or safely shut down affected components.</li>
+                </ul>
+                <div class="text-center">
+                    <img src="error_handling_diagram.png" alt="Error Handling Workflow Diagram" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Your Name</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

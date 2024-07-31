@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architectural Overview</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Software Project</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="use_cases.html">Use Cases</a></li>
+                <li class="nav-item"><a class="nav-link" href="architecture.html">Architectural Overview</a></li>
+                <li class="nav-item"><a class="nav-link" href="process_view.html">Process View</a></li>
+                <li class="nav-item"><a class="nav-link" href="quality.html">Quality</a></li>
+                <li class="nav-item"><a class="nav-link" href="design_elements.html">Process to Design Elements</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main class="container mt-4">
+        <h1 class="display-4 text-center">Architectural Overview</h1>
+        <p class="lead text-center">High-level description of the system architecture, including its major components and their interactions.</p>
+        
+        <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">System Components</h5>
+                <p class="card-text">The system consists of the following main components:</p>
+                <ul>
+                    <li><strong>User Interface</strong>: Allows users to interact with the system.</li>
+                    <li><strong>Application Logic</strong>: Contains the core functionality and business rules.</li>
+                    <li><strong>Database</strong>: Stores all persistent data for the system.</li>
+                    <li><strong>External Services</strong>: Interfaces with external systems and services.</li>
+                    <li><strong>API Gateway</strong>: Manages API calls between the user interface and the backend services.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">Component Interactions</h5>
+                <p class="card-text">The interactions between these components are illustrated in the following diagram:</p>
+                <div class="text-center">
+                    <img src="architecture_diagram.png" alt="Architecture Diagram" class="img-fluid">
+                </div>
+                <p class="card-text">The diagram illustrates how the User Interface communicates with the Application Logic through the API Gateway, and how the Application Logic interacts with the Database and External Services.</p>
+            </div>
+        </div>
+
+        <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">System Layers</h5>
+                <p class="card-text">The system architecture is divided into several layers, each responsible for different aspects of the system:</p>
+                <ul>
+                    <li><strong>Presentation Layer</strong>: Handles the user interface and user experience.</li>
+                    <li><strong>Business Logic Layer</strong>: Contains the core functionality and business rules.</li>
+                    <li><strong>Data Access Layer</strong>: Manages interactions with the database.</li>
+                    <li><strong>Integration Layer</strong>: Manages communication with external services.</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Your Name</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
